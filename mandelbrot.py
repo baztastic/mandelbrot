@@ -10,7 +10,7 @@ def mandel(x, y, max_iters, radius):
       set given a fixed number of iterations.
     """
     c = complex(x, y)
-    z = 0.0j
+    z = c
     for i in range(max_iters):
         z = z * z + c
         if (z.real * z.real + z.imag * z.imag) >= radius * 2:  # default 4
